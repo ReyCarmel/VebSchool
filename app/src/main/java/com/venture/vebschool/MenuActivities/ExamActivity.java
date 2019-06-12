@@ -1,13 +1,15 @@
-package com.venture.vebschool;
+package com.venture.vebschool.MenuActivities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ProfileActivity extends AppCompatActivity {
+import com.venture.vebschool.R;
+
+public class ExamActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_exam);
     }
 }

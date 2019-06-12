@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">VebSchool</string>
     <string name="app_icon">app icon</string>
+    <string name="s1">Turn on notifications</string>
+    <string name="s2">Share Application</string>
+    <string name="l1">Log Out!!!</string>
+    <string name="l2">Do you want to log out?</string>
+    <string name="l3">Cancel</string>
+    <string name="l4">Ok</string>
 </resources>

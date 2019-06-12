@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="100dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/messaxxxe">
+                android:id="@+id/message">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="100dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/mars">
+                android:id="@+id/exam">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
