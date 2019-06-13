@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MenuActivities.StudentActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/layout">
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/stu"
+            android:id="@+id/light"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Class"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Attendance"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Marks"
+            android:fontFamily="@font/times_newroman"
+            android:textSize="20dp"
+            android:layout_gravity=""
+            android:background="#7EBAF1"
+            android:paddingBottom="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
