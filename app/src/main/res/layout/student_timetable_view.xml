@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivities.StudentActivity">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#579FDA"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Time"
+                android:layout_marginLeft="2dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Monday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Tuesday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Wednesday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Thursday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Friday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Saturday"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
