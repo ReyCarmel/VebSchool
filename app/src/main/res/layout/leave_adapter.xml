@@ -7,39 +7,27 @@
     android:layout_height="wrap_content"
     tools:context=".MenuActivities.StudentActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:id="@+id/layout">
-        <ImageView
-
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/stu"
-            android:padding="2dp"
-            android:id="@+id/light"
-            android:paddingBottom="5dp"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#6DA2DA">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+
             android:layout_marginLeft="10dp">
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight=".4"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
-                android:text="Name"
+                android:text="Date"
                 android:textColor="#000"
-                android:textSize="20dp"
-               android:padding="5dp"/>
+                android:textSize="20dp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight=".4"
@@ -47,8 +35,7 @@
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="25dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,10 +47,9 @@
                 android:layout_weight=".4"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
-                android:text="Email"
+                android:text="Reason"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="20dp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight=".4"
@@ -71,8 +57,7 @@
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="25dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,11 +69,9 @@
                 android:layout_weight=".4"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
-                android:text="Class"
-                android:padding="5dp"
+                android:text="Status"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="20dp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight=".4"
@@ -96,43 +79,9 @@
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Attendance"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text=":"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="25dp" />
         </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Advanced Search"
-            android:fontFamily="@font/times_newroman"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"
-            android:background="#7EBAF1"
-            android:paddingBottom="5dp"/>
 
 
     </LinearLayout>

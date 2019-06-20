@@ -8,19 +8,21 @@ import android.os.Bundle;
 
 import com.github.silvestrpredko.dotprogressbar.DotProgressBar;
 import com.github.silvestrpredko.dotprogressbar.DotProgressBarBuilder;
+import com.venture.vebschool.databases.DBTransactionFunctions;
 
 public class ActivitySplashScreen extends AppCompatActivity {
-
+DBTransactionFunctions dbTransactionFunctions;
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_plash_screen);
+        setContentView(R.layout.layout_splash_screen);
         DotProgressBar dotProgressBar= findViewById(R.id.dot_progress_bar);
        dotProgressBar.changeAnimationDirection(DotProgressBar.RIGHT_DIRECTION);
        dotProgressBar.changeStartColor(R.color.colorGreen);
        dotProgressBar.changeEndColor(R.color.colorGreenLite);
-
+        dbTransactionFunctions=new DBTransactionFunctions(getApplicationContext());
+       dbTransactionFunctions.insertData();
         Thread background = new Thread() {
             public void run() {
                 try {
