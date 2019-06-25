@@ -1,4 +1,4 @@
 package com.venture.vebschool.MenuActivities;
 
-class StudentAdapter {
+public class MessageHistory {
 }

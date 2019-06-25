@@ -5,23 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MenuActivities.StudentActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:id="@+id/layout">
         <ImageView
 
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/stu"
-            android:padding="2dp"
-            android:id="@+id/light"
-            android:paddingBottom="5dp"/>
+            android:id="@+id/a_dp" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,113 +35,158 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".08"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text="Name"
                 android:textColor="#000"
-                android:textSize="20dp"
-               android:padding="5dp"/>
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/a_name"
+                android:textColor="#000"
+                android:textSize="18dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".08"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text="Email"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/a_mail"
+                android:textColor="#000"
+                android:textSize="18dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".08"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text="Class"
-                android:padding="5dp"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:padding="5dp"/>
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/a_class"
+                android:textColor="#000"
+                android:textSize="18dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".08"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text="Attendance"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/attendance"
+                android:textColor="#000"
+                android:textSize="18dp" />
         </LinearLayout>
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Advanced Search"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
             android:fontFamily="@font/times_newroman"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"
-            android:background="#7EBAF1"
-            android:paddingBottom="5dp"/>
-
+            android:textSize="15dp"
+            android:id="@+id/search"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/advance_search_btn"
+            />
 
     </LinearLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrE"
+        android:layout_marginTop="2dp"
+        />
+
+
 
 </LinearLayout>
 

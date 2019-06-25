@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MenuActivities.StudentActivity">
+    tools:context=".MenuActivities.MessageActivity">
 
 
     <android.support.v7.widget.RecyclerView
         android:layout_marginTop="10dp"
-        android:id="@+id/recycler_view"
+        android:id="@+id/recycler_messageview"
         android:layout_width="match_parent"
         android:textAlignment="center"
         android:layout_height="wrap_content">

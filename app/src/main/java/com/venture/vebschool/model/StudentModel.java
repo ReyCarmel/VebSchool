@@ -1,7 +1,51 @@
 package com.venture.vebschool.model;
 
 public class StudentModel {
-    String id,admission_no,name,s_class,division,roll_no,email,gender,birthday,phone_no;
+    String id;
+    String admission_no;
+    String name;
+    String s_class;
+    String division;
+    String roll_no;
+    String email;
+    String gender;
+    String birthday;
+    String phone_no;
+
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public StudentModel(String id, String name, String email, String aClass,String status, String date) {
+
+
+            this.admission_no=id;
+            this.name = name;
+            this.s_class = aClass;
+
+            this.email = email;
+            this.date=date;
+            this.attendance=status;
+
+    }
+
+
+    public String getAttendance()
+    {
+        return attendance;
+    }
+
+    public void setAttendance(String attendance) {
+        this.attendance = attendance;
+    }
+
+    String attendance;
+    String date;
 
     public String getId() {
         return id;
@@ -95,5 +139,6 @@ public class StudentModel {
         this.birthday = birthday;
         this.phone_no = phone_no;
     }
+
 
 }

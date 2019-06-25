@@ -21,6 +21,10 @@
         <activity android:name=".Submenu.LogoutActivity" />
         <activity android:name=".Submenu.SettingsActivity" />
         <activity android:name=".Submenu.ProfileActivity" />
+        <activity android:name=".MenuActivities.StudentDetails" />
+        <activity android:name=".MenuActivities.StudentMarkDetails" />
+        <activity android:name=".MenuActivities.TimeTableDetails" />
+
         <activity
             android:name=".Login"
             android:label="Login"

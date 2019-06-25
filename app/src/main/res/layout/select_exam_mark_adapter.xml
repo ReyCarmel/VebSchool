@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -12,20 +12,20 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp">
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight=".4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/times_newroman"
-
+            android:id="@+id/e_xam"
+            android:text="asdfghjkl;"
             android:textColor="#000"
             android:textSize="20dp"
             android:paddingBottom="5dp"/>
         <CheckBox
-            android:layout_width="0dp"
-            android:layout_weight=".1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/times_newroman"
            android:layout_marginLeft="20dp"
+            android:id="@+id/e_check"
             android:textColor="#000"
             android:textSize="20dp"
             android:paddingBottom="5dp"/>

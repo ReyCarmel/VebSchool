@@ -15,5 +15,7 @@
     <color name="colorGreenLite">#4CAF50</color>
     <color name="colorOrangeLite">#FFC107</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrEY">#E2DEDE</color>
+    <color name="colorGrE">#BEBBBB</color>
 
 </resources>

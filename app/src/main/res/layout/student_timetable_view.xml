@@ -4,100 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MenuActivities.StudentActivity">
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#579FDA"
-            android:orientation="horizontal">
-
+            android:orientation="vertical">
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
                 android:text="Time"
-                android:layout_marginLeft="2dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
+                android:fontFamily="@font/times_newroman"
                 android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textStyle="bold"/>
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_time"
+                android:fontFamily="@font/times_newroman"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Monday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mon"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Tuesday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tue"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Wednesday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wed"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Thursday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thu"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Friday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
-            <TextView
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fri"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="Saturday"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="2dp"
-                android:textColor="#fff"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sat"
+                    android:fontFamily="@font/times_newroman"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
     </HorizontalScrollView>
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textAlignment="center">
-
-    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
