@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/times_newroman"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:id="@+id/tstud_name2"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:textSize="18dp" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight=".10"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/times_newroman"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:hint="attendance"
+                    android:id="@+id/tstud_attend2"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.10"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/times_newroman"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:hint="exam"
+                    android:id="@+id/tstud_exam2"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrE"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -7,6 +7,9 @@ import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 
+import com.venture.vebschool.Parent.Home;
+import com.venture.vebschool.Teacher.TeacherHome;
+
 public class Login extends AppCompatActivity {
   AutoCompleteTextView phone,password;
   AppCompatButton login;
@@ -20,9 +23,17 @@ public class Login extends AppCompatActivity {
     login.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent i=new Intent(Login.this,Home.class);
-        startActivity(i);
-        finish();
+        if (phone.getText().toString().equals("1")) {
+          Intent i = new Intent(Login.this, Home.class);
+          startActivity(i);
+          finish();
+        }
+        else
+        {
+          Intent i = new Intent(Login.this, TeacherHome.class);
+          startActivity(i);
+          finish();
+        }
       }
     });
   }

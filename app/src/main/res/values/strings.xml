@@ -4,10 +4,34 @@
     <string name="s1">Turn on notifications</string>
     <string name="s2">Share Application</string>
     <string name="l1">Log Out!!!</string>
-    <string name="l2">Do you want to log out?</string>
-    <string name="l3">Cancel</string>
-    <string name="l4">Ok</string>
+    <string name="l2">Do you really want to exit?</string>
+    <string name="l3">CANCEL</string>
+    <string name="l4">OK</string>
     <string name="a1">Select view option</string>
     <string name="m1">Select Exams</string>
     <string name="m2">Select Subject</string>
+    <string name="title_activity_teacher_home">TeacherHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Teacher Name</string>
+    <string name="nav_header_subtitle">Email id</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_attendance">Attendance</string>
+    <string name="menu_mark">Marks</string>
+    <string name="menu_homework">Home Work</string>
+    <string name="menu_assignments">Assignments/Project</string>
+    <string name="menu_exam">Exams</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_news">News</string>
+    <string name="menu_leaves">Leaves</string>
+    <string name="menu_payments">Payments</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 </resources>

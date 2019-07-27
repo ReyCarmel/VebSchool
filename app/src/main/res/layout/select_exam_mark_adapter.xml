@@ -2,35 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="180dp"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/times_newroman"
-            android:id="@+id/e_xam"
-            android:text="asdfghjkl;"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:paddingBottom="5dp"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/times_newroman"
-           android:layout_marginLeft="20dp"
-            android:id="@+id/e_check"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:paddingBottom="5dp"/>
+        android:layout_marginLeft="5dp"
+        android:padding="2dp">
     </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/exam_recycler"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:padding="2dp"
+        android:textColor="@color/colorBlue"
+        android:textAllCaps="false"
+        android:fontFamily="@font/times_newroman"
+        android:textSize="18dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/done"
+        android:layout_marginTop="5dp"
+        />
+
 </LinearLayout>
-
-
-

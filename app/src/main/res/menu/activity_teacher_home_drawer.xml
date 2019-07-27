@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/attendance"
+            android:title="@string/menu_attendance" />
+        <item
+            android:id="@+id/nav_mark"
+            android:icon="@drawable/marksheet"
+            android:title="@string/menu_mark" />
+        <item
+            android:id="@+id/nav_homework"
+            android:icon="@drawable/h"
+            android:title="@string/menu_homework" />
+        <item
+            android:id="@+id/nav_assign"
+            android:icon="@drawable/assignment"
+            android:title="@string/menu_assignments" />
+        <item
+            android:id="@+id/nav_exam"
+            android:icon="@drawable/exam"
+            android:title="@string/menu_exam" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events"
+            android:title="@string/menu_events" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ne"
+            android:title="@string/menu_news" />
+        <item
+            android:id="@+id/nav_leaves"
+            android:icon="@drawable/leave_app"
+            android:title="@string/menu_leaves" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/pay"
+            android:title="@string/menu_payments" />
+    </group>
+
+
+</menu>

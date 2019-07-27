@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".09"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Exam Name"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:id="@+id/t_examName"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".09"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Select Class"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:id="@+id/t_Class"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".09"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Start Date &amp; Time"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/start_date"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".09"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="End Date &amp; Time"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/end_date"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/advance_search_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Submit"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

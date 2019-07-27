@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tc_linear"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tc_layout">
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/stu"
+                android:id="@+id/tc_dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tc_name"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="name"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tc_phone"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="phone"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrE"
+        android:layout_marginTop="1dp"
+        />
+
+</LinearLayout>
+
+
+

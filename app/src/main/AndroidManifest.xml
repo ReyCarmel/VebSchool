@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.venture.vebschool">
 
     <application
@@ -9,22 +10,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivities.PaymentActivity"></activity>
-        <activity android:name=".MenuActivities.NewsActivity" />
-        <activity android:name=".MenuActivities.EventActivity" />
-        <activity android:name=".MenuActivities.ExamActivity" />
-        <activity android:name=".MenuActivities.MessageActivity" />
-        <activity android:name=".MenuActivities.TimetableActivity" />
-        <activity android:name=".MenuActivities.MarkActivity" />
-        <activity android:name=".MenuActivities.AttendanceActivity" />
-        <activity android:name=".MenuActivities.StudentActivity" />
-        <activity android:name=".Submenu.LogoutActivity" />
-        <activity android:name=".Submenu.SettingsActivity" />
-        <activity android:name=".Submenu.ProfileActivity" />
-        <activity android:name=".MenuActivities.StudentDetails" />
-        <activity android:name=".MenuActivities.StudentMarkDetails" />
-        <activity android:name=".MenuActivities.TimeTableDetails" />
-
+        <activity android:name=".Teacher.LayoutActivity"></activity>
+        <activity
+            android:name=".Teacher.TeacherHome"
+            android:label="@string/title_activity_teacher_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Parent.MenuActivities.HomeWork.HomeWorkActivity" />
+        <activity android:name=".Parent.MenuActivities.Holiday.HolidayActivity" />
+        <activity android:name=".Parent.MenuActivities.News.NewsActivity" />
+        <activity android:name=".Parent.MenuActivities.Event.EventActivity" />
+        <activity android:name=".Parent.MenuActivities.Exam.ExamActivity" />
+        <activity android:name=".Parent.MenuActivities.Message.MessageActivity" />
+        <activity android:name=".Parent.MenuActivities.TimeTable.TimetableActivity" />
+        <activity android:name=".Parent.MenuActivities.Mark.MarkActivity" />
+        <activity android:name=".Parent.MenuActivities.Attendance.AttendanceActivity" />
+        <activity android:name=".Parent.MenuActivities.Student.StudentActivity" />
+        <activity android:name=".Parent.Submenu.SettingsActivity" />
+        <activity android:name=".Parent.Submenu.ProfileActivity" />
+        <activity android:name=".Parent.MenuActivities.Student.StudentDetails" />
+        <activity android:name=".Parent.MenuActivities.Mark.StudentMarkDetails" />
+        <activity android:name=".Parent.MenuActivities.TimeTable.TimeTableDetails" />
+        <activity android:name=".Parent.MenuActivities.Message.ChatList" />
+        <activity android:name=".Parent.MenuActivities.Message.AddContact" />
+        <activity android:name=".Parent.MenuActivities.Exam.ExamDate" />
+        <activity android:name=".Parent.MenuActivities.Event.EventDetails" />
+        <activity android:name=".Parent.MenuActivities.News.NewsData" />
+        <activity android:name=".Parent.MenuActivities.Holiday.HolidayDates" />
+        <activity android:name=".Parent.MenuActivities.Subject.SubjectActivity" />
+        <activity android:name=".Parent.MenuActivities.Subject.Subjectdetails" />
+        <activity android:name=".Parent.MenuActivities.HomeWork.HomeWorkDetails" />
+        <activity android:name=".Parent.MenuActivities.HomeWork.HomeworkData" />
+        <activity android:name=".Parent.MenuActivities.Leave.LeaveActivity" />
+        <activity android:name=".Parent.MenuActivities.Leave.LeaveDetails" />
+        <activity android:name=".Parent.MenuActivities.Leave.LeaveApplication" />
+        <activity android:name=".Parent.MenuActivities.Assignment.AssignmentActivity" />
+        <activity android:name=".Parent.MenuActivities.Assignment.AssignmentDetails" />
+        <activity android:name=".Parent.MenuActivities.Assignment.AssignmentData" />
+        <activity android:name=".Parent.MenuActivities.Attendance.Complaint.ComplaintActivity" />
+        <activity android:name=".Parent.MenuActivities.Attendance.Complaint.ComplaintDetails" />
+        <activity android:name=".Parent.MenuActivities.Attendance.AttendanceGraph" />
+        <activity android:name=".Parent.MenuActivities.Attendance.NormalAttendance" />
+        <activity android:name=".Parent.MenuActivities.Mark.ViewMark" />
+        <activity android:name=".Parent.MenuActivities.Mark.CompareMark" />
         <activity
             android:name=".Login"
             android:label="Login"
@@ -39,7 +66,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
+            android:name=".Parent.Home"
             android:label="Home" />
     </application>
 

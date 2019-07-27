@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+
     android:gravity="center"
     android:orientation="vertical">
     <LinearLayout
@@ -15,7 +15,9 @@
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints"></LinearLayout>
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/times_newroman"
                     android:text=":"
+                    android:id="@+id/nam"
                     android:textColor="#000"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -90,6 +93,7 @@
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/times_newroman"
                    android:text=":"
+                   android:id="@+id/gen"
                    android:textColor="#000"
                    android:textSize="20dp" />
 
@@ -113,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/times_newroman"
                     android:text=":"
+                    android:id="@+id/em"
                     android:textColor="#000"
                     android:textSize="20dp" />
 
@@ -137,6 +142,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/times_newroman"
                     android:text=":"
+                    android:id="@+id/ad"
                     android:textColor="#000"
                     android:textSize="20dp" />
 
@@ -158,6 +164,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/times_newroman"
                     android:text=":"
+                    android:id="@+id/ph"
                     android:textColor="#000"
                     android:textSize="20dp" />
 

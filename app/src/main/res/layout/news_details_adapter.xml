@@ -1,57 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MenuActivities.StudentActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
+        android:orientation="horizontal">
 
-                android:textColor="#000"
-                android:textSize="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp">
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/light"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sc" />
+
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:id="@+id/t_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:textColor="#000"
-                android:textSize="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp">
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:id="@+id/t_date"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:textColor="#000"
-                android:textSize="20dp" />
-        </LinearLayout>
+                android:layout_below="@id/t_title"
+                android:layout_marginLeft="200dp"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/t_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/light"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
     </LinearLayout>
 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrE"
+            android:layout_marginTop="2dp"
+            />
+
+
+
+
+
 </LinearLayout>
+
+
+

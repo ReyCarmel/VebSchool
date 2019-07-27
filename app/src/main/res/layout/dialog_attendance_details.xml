@@ -15,10 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
        android:paddingTop="5dp"
-        android:text="Student Name"
+        android:text=":"
         android:fontFamily="@font/times_newroman"
         android:textSize="20dp"
         android:paddingLeft="5dp"
+        android:id="@+id/stud"
         android:textStyle="bold"
         android:textColor="#fff"
         android:paddingBottom="5dp"/>
@@ -32,46 +33,62 @@
             android:layout_marginLeft="10dp">
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".12"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
-                android:text="From Date"
+                android:text="From"
                 android:textColor="#000"
-                android:textSize="20dp"
-                android:paddingBottom="5dp"/>
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
-                android:paddingBottom="5dp"
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="--select--"
+                android:id="@+id/from"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
         </LinearLayout>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text="To Date"
-                android:paddingBottom="5dp"
-                android:textColor="#000"
-                android:textSize="20dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight=".4"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-                android:text=":"
-                android:textColor="#000"
-                android:paddingBottom="5dp"
-                android:textSize="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".12"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="To"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/to"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,12 +111,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp">
-
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:id="@+id/radioGroup">
+            android:id="@+id/group">
 
             <RadioButton
                 android:layout_width="wrap_content"

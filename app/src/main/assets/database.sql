@@ -1,6 +1,14 @@
 Create table tb_configuration(configName text,configValue text);
 Create table tb_student(id integer PRIMARY KEY AUTOINCREMENT,admission_no text,name text,class text,division text,roll_no text,email text,gender text,birthday text,phone_no text);
-Create  table tb_attendance(id integer PRIMARY KEY AUTOINCREMENT,admission_no text,a_date text,status text);
+Create table tb_attendance(id integer PRIMARY KEY AUTOINCREMENT,admission_no text,a_date text,status text);
 Create table tb_mark(id integer PRIMARY KEY AUTOINCREMENT,subject text,mark text);
 Create table tb_exam(id integer PRIMARY KEY AUTOINCREMENT,s_date text,end_date text,e_name text);
-
+Create table tb_contact(id integer PRIMARY KEY AUTOINCREMENT,c_name text,subject text);
+Create table tb_event(id integer PRIMARY KEY AUTOINCREMENT,e_event text,e_date text,e_loc text,e_desc text);
+Create table tb_news(id integer PRIMARY KEY AUTOINCREMENT,title text,n_date text,n_content text);
+Create table tb_holiday(id integer PRIMARY KEY AUTOINCREMENT,h_name text,h_date text);
+Create table tb_homework(id integer PRIMARY KEY AUTOINCREMENT,title text,description text,h_date text,reference text,attachment text);
+Create table tb_leave(id integer PRIMARY KEY AUTOINCREMENT,l_date text,reason text,status text,subject text,description text);
+Create table tb_assignment(id integer PRIMARY KEY AUTOINCREMENT,date text,subject text,title text,description text,reference text,student_id text);
+Create table tb_complaint(id integer PRIMARY KEY AUTOINCREMENT,title text,description text,student_id text);
+Create table tb_profile(id integer PRIMARY KEY AUTOINCREMENT,_name text,gender text,email text,address text,phone text);

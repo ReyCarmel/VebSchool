@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MenuActivities.StudentActivity">
+    android:orientation="horizontal"
+    >
 
 
     <LinearLayout
@@ -21,71 +20,105 @@
             android:layout_marginLeft="10dp">
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
                 android:text="Title"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="25dp" />
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/title"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp">
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
                 android:text="Description"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/times_newroman"
-
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="25dp" />
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/des"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp">
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".04"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text="Reference"
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight=".4"
+                android:layout_weight=".01"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/times_newroman"
                 android:text=":"
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/ref"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginTop="2dp"
+            />
 
 
 
     </LinearLayout>
+
 
 </LinearLayout>
 
