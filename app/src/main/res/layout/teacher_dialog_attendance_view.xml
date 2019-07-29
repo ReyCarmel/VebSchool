@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#579FDA">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:text=":"
+            android:fontFamily="@font/times_newroman"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/stud"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".12"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="From"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/ta_from"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".12"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="To"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/ta_to"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="@string/a1"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graph"
+                android:fontFamily="@font/times_newroman"
+                android:id="@+id/ta_graph"
+                android:enabled="true"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:fontFamily="@font/times_newroman"
+                android:id="@+id/ta_normal"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="90dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:fontFamily="@font/times_newroman"
+            android:paddingBottom="5dp"
+            android:id="@+id/ta_submit"
+            android:background="#579FDA"
+            />
+    </LinearLayout>
+
+</LinearLayout>
