@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -33,7 +33,7 @@ public class MarkDetailsAdapter extends RecyclerView.Adapter<MarkDetailsAdapter.
         try
 
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mark_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_mark2,viewGroup,false);
             holder=new MarkDetailsAdapter.MarkDetails(view);
         }
         catch (Exception e)
@@ -82,11 +82,10 @@ public class MarkDetailsAdapter extends RecyclerView.Adapter<MarkDetailsAdapter.
         TextView mark;
         public MarkDetails(@NonNull View itemView) {
             super(itemView);
-            t_class=itemView.findViewById(R.id.tc);
-            t_email=itemView.findViewById(R.id.temail);
-            t_name=itemView.findViewById(R.id.tname);
-            mark=itemView.findViewById(R.id.marks);
-            l=itemView.findViewById(R.id.layout);
+            t_class=itemView.findViewById(R.id.parent_mark2_class);
+            t_email=itemView.findViewById(R.id.parent_mark2_mail);
+            t_name=itemView.findViewById(R.id.parent_mark2_name);
+            l=itemView.findViewById(R.id.parent_mark2_layout);
 
         }
     }

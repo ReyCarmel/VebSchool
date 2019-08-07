@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.ContactModel;
+import com.venture.vebschool.Parent.MenuActivities.Message.ContactModel;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Subjectdetails extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subject_details);
+        setContentView(R.layout.parent_subject3);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
@@ -30,7 +30,7 @@ public class Subjectdetails extends AppCompatActivity {
         getSupportActionBar().setTitle(name);
         try
         {
-            recyclerView=findViewById(R.id.recycler_sub_view);
+            recyclerView=findViewById(R.id.parent_subject3_recycler);
             arrayList= DBTransactionFunctions.getSubjects();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(Subjectdetails.this);
             SubjectDetailsAdapter subjectDetailsAdapter=new SubjectDetailsAdapter(getApplicationContext(),arrayList);

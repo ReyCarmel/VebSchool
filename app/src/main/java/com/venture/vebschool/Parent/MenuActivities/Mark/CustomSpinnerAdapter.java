@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.ExamModel;
+import com.venture.vebschool.Parent.MenuActivities.Exam.ExamModel;
 import java.util.ArrayList;
 
 public class CustomSpinnerAdapter extends BaseAdapter {
@@ -36,8 +36,8 @@ public class CustomSpinnerAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.select_exam_mark_adapter,parent,false);
-        TextView exam=convertView.findViewById(R.id.e_xam);
+        convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.parent_mark9,parent,false);
+        TextView exam=convertView.findViewById(R.id.parent_mark9_recycler);
        // CheckBox checkBox=convertView.findViewById(R.id.e_check);
         exam.setText(arrayList.get(position).getName());
 

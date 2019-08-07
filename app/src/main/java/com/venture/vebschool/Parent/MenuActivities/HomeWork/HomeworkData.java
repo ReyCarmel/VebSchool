@@ -19,11 +19,11 @@ public class HomeworkData extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homework_data);
+        setContentView(R.layout.parent_homework5);
         getSupportActionBar().setTitle("Homework");
         try
         {
-            recyclerView=findViewById(R.id.recycler_home_data);
+            recyclerView=findViewById(R.id.parent_homework5_recycler);
             arrayList= DBTransactionFunctions.getHomeworkData();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HomeworkData.this);
             HomeworkDataAdapter homeworkDataAdapter=new HomeworkDataAdapter(getApplicationContext(),arrayList);

@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.ExamModel;
 
 import java.util.ArrayList;
 
@@ -27,7 +26,7 @@ public class ExamDateAdapter extends RecyclerView.Adapter<ExamDateAdapter.ExamDa
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.exam_date_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_exam4,viewGroup,false);
             holder=new ExamDateAdapter.ExamDate(view);
 
         }catch (Exception e)
@@ -55,8 +54,8 @@ public class ExamDateAdapter extends RecyclerView.Adapter<ExamDateAdapter.ExamDa
         TextView ename,edate;
         public ExamDate(@NonNull View itemView) {
             super(itemView);
-            ename=itemView.findViewById(R.id.exam);
-            edate=itemView.findViewById(R.id.date);
+            ename=itemView.findViewById(R.id.parent_exam4_exam);
+            edate=itemView.findViewById(R.id.parent_exam4_date);
         }
     }
 }

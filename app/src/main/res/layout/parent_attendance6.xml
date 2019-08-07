@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Date"
+            android:textStyle="bold"
+            android:id="@+id/parent_attendance6_date"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Status"
+            android:textStyle="bold"
+            android:id="@+id/parent_attendance6_st"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrE"
+        android:layout_marginTop="2dp"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -12,7 +12,6 @@ import android.view.View;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.ContactModel;
 
 import java.util.ArrayList;
 
@@ -24,13 +23,13 @@ public class ChatList extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chat_list);
+        setContentView(R.layout.parent_message3);
         getSupportActionBar().setTitle("Chats");
         try
         {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            f=findViewById(R.id.chat);
-            recyclerView=findViewById(R.id.recycler_chat);
+            f=findViewById(R.id.parent_message3_chat);
+            recyclerView=findViewById(R.id.parent_message3_recycler);
             arrayList= DBTransactionFunctions.getContact();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(ChatList.this);
             ChatListAdapter chatListAdapter=new ChatListAdapter(getApplicationContext(),arrayList);

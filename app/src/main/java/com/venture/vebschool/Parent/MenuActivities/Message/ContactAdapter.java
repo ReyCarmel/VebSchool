@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.ContactModel;
 
 import java.util.ArrayList;
 
@@ -28,7 +27,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.Contact>
         View view=null;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.contact_list,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_message6,viewGroup,false);
             holder=new ContactAdapter.Contact(view);
 
         }catch (Exception e){
@@ -53,8 +52,8 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.Contact>
         LinearLayout l;
         public Contact(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.cname);
-            l=itemView.findViewById(R.id.c_linear);
+            name=itemView.findViewById(R.id.parent_message6_name);
+            l=itemView.findViewById(R.id.parent_message6_layout);
         }
     }
 }

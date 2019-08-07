@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,10 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_work);
+        setContentView(R.layout.parent_homework1);
         try{
             getSupportActionBar().setTitle("Homework");
-            recyclerView=findViewById(R.id.recycler_home);
+            recyclerView=findViewById(R.id.parent_homework1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HomeWorkActivity.this);
             HomeAdapter homeAdapter = new HomeAdapter(getApplicationContext(),arrayList);
@@ -32,7 +32,7 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
 
         }catch (Exception e)
         {
-
+        e.printStackTrace();
         }
     }
     @Override

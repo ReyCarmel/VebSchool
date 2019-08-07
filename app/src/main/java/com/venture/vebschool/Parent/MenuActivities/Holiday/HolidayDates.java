@@ -20,10 +20,10 @@ public class HolidayDates extends AppCompatActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.holday_list);
+        setContentView(R.layout.parent_holiday3);
         getSupportActionBar().setTitle("Holiday");
         try{
-            recyclerView=findViewById(R.id.holi_recycler);
+            recyclerView=findViewById(R.id.parent_holiday3_recycler);
             arrayList= DBTransactionFunctions.getHoliday();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HolidayDates.this);
             HolidayListAdapter holidayListAdapter=new HolidayListAdapter(getApplicationContext(),arrayList);

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.Event> {
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.event_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_event2,viewGroup,false);
             holder=new EventAdapter.Event(view);
 
         }catch (Exception e)
@@ -65,9 +65,6 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.Event> {
                 context.startActivity(intent);
             }
         });
-
-
-
     }
 
     @Override
@@ -81,10 +78,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.Event> {
 
         public Event(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.tname);
-            mail = itemView.findViewById(R.id.temail);
-            s_class = itemView.findViewById(R.id.tc);
-            l = itemView.findViewById(R.id.layout);
+            name = itemView.findViewById(R.id.parent_event2_name);
+            mail = itemView.findViewById(R.id.parent_event2_mail);
+            s_class = itemView.findViewById(R.id.parent_event2_class);
+            l = itemView.findViewById(R.id.parent_event2_layout);
         }
 
     }

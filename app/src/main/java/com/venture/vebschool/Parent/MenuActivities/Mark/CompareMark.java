@@ -20,8 +20,8 @@ public class CompareMark extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bargraph_mark__comparison);
-        barChart = findViewById(R.id.BarChart);
+        setContentView(R.layout.parent_mark11);
+        barChart = findViewById(R.id.parent_mark11_barchart);
         getEntries();
         barDataSet = new BarDataSet(barEntries, "");
         barData = new BarData(barDataSet);

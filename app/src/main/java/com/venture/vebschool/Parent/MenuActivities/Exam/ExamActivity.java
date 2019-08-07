@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -19,10 +19,10 @@ public class ExamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exam);
+        setContentView(R.layout.parent_exam1);
         try
         {   getSupportActionBar().setTitle("Exam");
-            recyclerView=findViewById(R.id.recycler_view_exam);
+            recyclerView=findViewById(R.id.parent_exam1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(ExamActivity.this);
             ExamAdapter examAdapter=new ExamAdapter(getApplication(),arrayList);

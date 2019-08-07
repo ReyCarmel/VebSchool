@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.News> {
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.news_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_news2,viewGroup,false);
             holder=new NewsAdapter.News(view);
 
         }catch (Exception e)
@@ -83,10 +83,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.News> {
         LinearLayout l;
         public News(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.tname);
-            email=itemView.findViewById(R.id.temail);
-            sclass=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            name=itemView.findViewById(R.id.parent_news2_name);
+            email=itemView.findViewById(R.id.parent_news2_mail);
+            sclass=itemView.findViewById(R.id.parent_news2_clas);
+            l=itemView.findViewById(R.id.parent_news2_layout);
 
         }
     }

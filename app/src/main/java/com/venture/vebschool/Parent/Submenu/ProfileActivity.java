@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.venture.vebschool.Parent.model.ProfileModel;
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
 
@@ -20,9 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-
-
+        setContentView(R.layout.parent_profile);
 
         try
         {
@@ -30,11 +29,11 @@ public class ProfileActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
             arrayList= DBTransactionFunctions.getProfile();
-            name=findViewById(R.id.nam);
-            gender=findViewById(R.id.gen);
-            email=findViewById(R.id.em);
-            address=findViewById(R.id.ad);
-            phone=findViewById(R.id.ph);
+            name=findViewById(R.id.parent_profile_name);
+            gender=findViewById(R.id.parent_profile_gender);
+            email=findViewById(R.id.parent_profile_mail);
+            address=findViewById(R.id.parent_profile_ad);
+            phone=findViewById(R.id.parent_profile_ph);
 
             name.setText(arrayList.get(0).getNa());
             gender.setText(arrayList.get(0).getGe());

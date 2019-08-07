@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.ExamModel;
+import com.venture.vebschool.Parent.MenuActivities.Exam.ExamModel;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ public class ExamListAdapter extends RecyclerView.Adapter<ExamListAdapter.Exam> 
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.exam_list,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_mark10,viewGroup,false);
             holder=new ExamListAdapter.Exam(view);
 
         }catch (Exception e)
@@ -82,9 +82,9 @@ public class ExamListAdapter extends RecyclerView.Adapter<ExamListAdapter.Exam> 
 
         public Exam(@NonNull View itemView) {
             super(itemView);
-            check=itemView.findViewById(R.id.checkName);
-            examName=itemView.findViewById(R.id.exam_name);
-            l=itemView.findViewById(R.id.examLinear);
+            check=itemView.findViewById(R.id.parent_mark10_check);
+            examName=itemView.findViewById(R.id.parent_mark10_exam);
+            l=itemView.findViewById(R.id.parent_mark10_layout);
         }
     }
 }

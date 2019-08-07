@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/parent_assign4_layout"
+        android:background="#6DA2DA">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:padding="2dp"
+                android:text="subject"
+                android:textStyle="bold"
+                android:id="@+id/parent_assign4_sub"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Last Date"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/parent_assign4_date"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:id="@+id/parent_assign4_title"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorGrE"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:id="@+id/parent_leave4_layout"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#6DA2DA">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/parent_leave4_date"
+                android:textColor="#000"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Reason"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/parent_leave4_rs"
+                android:textColor="#000"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".04"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text="Status"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times_newroman"
+                android:text=":"
+                android:id="@+id/parent_leave4_st"
+                android:textColor="#000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+

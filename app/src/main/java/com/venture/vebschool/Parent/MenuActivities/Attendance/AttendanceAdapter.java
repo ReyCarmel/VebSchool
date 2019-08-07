@@ -16,7 +16,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -42,7 +42,7 @@ public  class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.A
         View view=null;
         try
         {
-            view=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.attendance_adapter,viewGroup,false);
+            view=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_attendance2,viewGroup,false);
             holder= new  AttendanceAdapter.AttendanceDetails(view);
         }
         catch (Exception e)
@@ -66,12 +66,12 @@ public  class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.A
             {
 
                 final Dialog dialog = new Dialog(context);
-            dialog.setContentView(R.layout.dialog_attendance_details);
-            name=dialog.findViewById(R.id.stud);
-            fr=dialog.findViewById(R.id.from);
-            t=dialog.findViewById(R.id.to);
-            submit=dialog.findViewById(R.id.btnSubmit);
-            radioGroup=dialog.findViewById(R.id.group);
+            dialog.setContentView(R.layout.parent_attendance3);
+            name=dialog.findViewById(R.id.parent_attendance3_stud);
+            fr=dialog.findViewById(R.id.parent_attendance3_from);
+            t=dialog.findViewById(R.id.parent_attendance3_to);
+            submit=dialog.findViewById(R.id.parent_attendance3_submit);
+            radioGroup=dialog.findViewById(R.id.parent_attendance3_group);
             name.setText(arrayList.get(i).getName());
             fr.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -131,11 +131,11 @@ public  class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.A
 
         public AttendanceDetails(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.a_name);
-            email = itemView.findViewById(R.id.a_mail);
-            a_class = itemView.findViewById(R.id.a_class);
-            attendance = itemView.findViewById(R.id.attendance);
-            advance = itemView.findViewById(R.id.search);
+            name = itemView.findViewById(R.id.parent_attendance2__name);
+            email = itemView.findViewById(R.id.parent_attendance2_mail);
+            a_class = itemView.findViewById(R.id.parent_attendance2_class);
+            attendance = itemView.findViewById(R.id.parent_attendance2_at);
+            advance = itemView.findViewById(R.id.parent_attendance2_search);
         }
 
     }

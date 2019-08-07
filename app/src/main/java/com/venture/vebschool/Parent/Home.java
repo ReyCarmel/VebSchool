@@ -17,7 +17,7 @@ import com.synnapps.carouselview.ImageListener;
 import com.venture.vebschool.Login;
 import com.venture.vebschool.Parent.MenuActivities.Assignment.AssignmentActivity;
 import com.venture.vebschool.Parent.MenuActivities.Attendance.AttendanceActivity;
-import com.venture.vebschool.Parent.MenuActivities.Attendance.Complaint.ComplaintActivity;
+import com.venture.vebschool.Parent.MenuActivities.Complaint.ComplaintActivity;
 import com.venture.vebschool.Parent.MenuActivities.Event.EventActivity;
 import com.venture.vebschool.Parent.MenuActivities.Exam.ExamActivity;
 import com.venture.vebschool.Parent.MenuActivities.HomeWork.HomeWorkActivity;
@@ -42,7 +42,7 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.parent_activity);
         carouselView = (CarouselView) findViewById(R.id.sliderLayout);
 
         carouselView.setPageCount(sampleImages.length);

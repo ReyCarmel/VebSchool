@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
 
 import java.util.ArrayList;
 
@@ -37,7 +36,7 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
         View view=null;
 
        try {
-           view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.student_adapter, viewGroup, false);
+           view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_student2, viewGroup, false);
             holder = new StudentDetailsAdapter.StudDetails(view);
 
        }
@@ -88,10 +87,10 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
         TextView t_name,t_class,t_email;
         public StudDetails(@NonNull View itemView) {
             super(itemView);
-            t_name=itemView.findViewById(R.id.tname);
-            t_email=itemView.findViewById(R.id.temail);
-            t_class=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            t_name=itemView.findViewById(R.id.parent_student2_name);
+            t_email=itemView.findViewById(R.id.parent_student2_mail);
+            t_class=itemView.findViewById(R.id.parent_student2_class);
+            l=itemView.findViewById(R.id.parent_student2_layout);
 
         }
     }

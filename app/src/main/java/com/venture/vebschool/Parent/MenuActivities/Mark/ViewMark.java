@@ -10,7 +10,6 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.MarkModel;
 
 import java.util.ArrayList;
 
@@ -22,7 +21,7 @@ public class ViewMark extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_mark);
+        setContentView(R.layout.parent_mark6);
 
         try{
             Intent intent=getIntent();
@@ -30,7 +29,7 @@ public class ViewMark extends AppCompatActivity {
             getSupportActionBar().setTitle(item);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-            recyclerView=findViewById(R.id.view_mark);
+            recyclerView=findViewById(R.id.parent_mark6_recycler);
             arrayList= DBTransactionFunctions.getMarkSheet();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(ViewMark.this);
             ViewMarkAdapter viewMarkAdapter= new ViewMarkAdapter(getApplicationContext(),arrayList);

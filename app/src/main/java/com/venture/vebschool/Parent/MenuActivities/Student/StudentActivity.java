@@ -8,7 +8,6 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
 
 import java.util.ArrayList;
 
@@ -20,11 +19,11 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student);
+        setContentView(R.layout.parent_student1);
 
         try {
             getSupportActionBar().setTitle("Students");
-            recyclerView = findViewById(R.id.recycler_view_student);
+            recyclerView = findViewById(R.id.parent_student1_recycler);
 
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             arrayList = DBTransactionFunctions.getStudentDetails();

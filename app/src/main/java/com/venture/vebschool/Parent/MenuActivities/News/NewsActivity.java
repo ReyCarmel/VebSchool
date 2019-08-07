@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,10 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.parent_news1);
         try{
             getSupportActionBar().setTitle("News");
-            recyclerView=findViewById(R.id.recycler_view_news);
+            recyclerView=findViewById(R.id.parent_news1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(NewsActivity.this);
             NewsAdapter newsAdapter= new NewsAdapter(getApplicationContext(),arrayList);

@@ -24,14 +24,14 @@ public class AttendanceGraph extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.attendance_piechart);
+        setContentView(R.layout.parent_attendance4);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
         name=intent.getStringExtra("name");
         getSupportActionBar().setTitle(name);
 
-        pieChartView = findViewById(R.id.chart);
+        pieChartView = findViewById(R.id.parent_attendance4_chart);
 
         List pieData = new ArrayList<>();
         pieData.add(new SliceValue(75, Color.BLUE).setLabel("Present"));

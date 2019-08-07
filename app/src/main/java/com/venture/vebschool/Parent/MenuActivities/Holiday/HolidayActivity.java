@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -19,11 +19,11 @@ public class HolidayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_holiday);
+        setContentView(R.layout.parent_holiday1);
         try
         {
             getSupportActionBar().setTitle("Holidays");
-            recyclerView=findViewById(R.id.recycler);
+            recyclerView=findViewById(R.id.parent_holiday1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HolidayActivity.this);
             HolidayAdapter holidayAdapter=new HolidayAdapter(getApplicationContext(),arrayList);

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:text="Event Name"
+            android:id="@+id/d_event"
+            android:fontFamily="@font/times_newroman"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:id="@+id/d_date"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Location"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:id="@+id/d_loc"
+            android:paddingBottom="5dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="Description"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:id="@+id/d_desc"
+            android:textColor="#000"
+            android:paddingBottom="5dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

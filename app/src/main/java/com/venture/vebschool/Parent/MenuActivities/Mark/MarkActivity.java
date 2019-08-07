@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -21,8 +21,8 @@ public class MarkActivity extends AppCompatActivity {
         try{
             getSupportActionBar().setTitle("Mark");
 
-            setContentView(R.layout.mark);
-            recyclerView=findViewById(R.id.recylerview_mark);
+            setContentView(R.layout.parent_mark1);
+            recyclerView=findViewById(R.id.parent_mark1_recycler);
             arrayList= DBTransactionFunctions.getMark();
             MarkDetailsAdapter markDetailsAdapter=new MarkDetailsAdapter(getApplicationContext(),arrayList);
             LinearLayoutManager linearLayoutManager= new LinearLayoutManager(MarkActivity.this);

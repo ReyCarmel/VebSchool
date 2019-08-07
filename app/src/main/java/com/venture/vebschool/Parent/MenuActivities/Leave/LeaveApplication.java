@@ -19,13 +19,13 @@ public class LeaveApplication extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.leave_application_adapter);
+        setContentView(R.layout.parent_leave5);
         getSupportActionBar().setTitle("Leave Application");
         try{
-            e_date=findViewById(R.id.dt);
-            e_sub=findViewById(R.id.sb);
-            e_desc=findViewById(R.id.ds);
-            button=findViewById(R.id.submit);
+            e_date=findViewById(R.id.parent_leave5_date);
+            e_sub=findViewById(R.id.parent_leave5_sub);
+            e_desc=findViewById(R.id.parent_leave5_des);
+            button=findViewById(R.id.parent_leave5_submit);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

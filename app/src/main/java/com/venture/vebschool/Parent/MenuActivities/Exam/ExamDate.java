@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.ExamModel;
 
 import java.util.ArrayList;
 
@@ -24,7 +23,7 @@ public class ExamDate extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.exam_date);
+        setContentView(R.layout.parent_exam3);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
@@ -34,9 +33,9 @@ public class ExamDate extends AppCompatActivity {
         try
         {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            recyclerView=findViewById(R.id.recycler_exam_view);
-            ename=findViewById(R.id.e_xam);
-            edate=findViewById(R.id.e_date);
+            recyclerView=findViewById(R.id.parent_exam3_recycler);
+            ename=findViewById(R.id.parent_exam3_exam);
+            edate=findViewById(R.id.parent_exam3_date);
             arrayList= DBTransactionFunctions.getExamDate();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(ExamDate.this);
             ExamDateAdapter examDateAdapter=new ExamDateAdapter(getApplicationContext(),arrayList);

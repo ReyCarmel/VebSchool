@@ -27,7 +27,7 @@ ArrayList<EventModel> arrayList=new ArrayList<>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.event_details_adapter);
+        setContentView(R.layout.parent_event3);
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
         name=intent.getStringExtra("name");
@@ -35,10 +35,10 @@ ArrayList<EventModel> arrayList=new ArrayList<>();
         try
         {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            recyclerView=findViewById(R.id.recyclerview_event);
-            E_vent=findViewById(R.id.eve);
-            E_date=findViewById(R.id.date);
-            l=findViewById(R.id.line);
+            recyclerView=findViewById(R.id.parent_event3_recycler);
+            E_vent=findViewById(R.id.parent_event3_eve);
+            E_date=findViewById(R.id.parent_event3_date);
+            l=findViewById(R.id.parent_event3_layout);
             arrayList= DBTransactionFunctions.getEvents();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(EventDetails.this);
             EventDetailsAdapter eventDetailsAdapter=new EventDetailsAdapter(getApplicationContext(),arrayList);

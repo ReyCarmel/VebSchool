@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -20,10 +20,10 @@ public class AssignmentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.assignment);
+        setContentView(R.layout.parent_assignment1);
         try {
             getSupportActionBar().setTitle("Assignments");
-            recyclerView=findViewById(R.id.assign_recycler);
+            recyclerView=findViewById(R.id.parent_assign1_recycler);
 
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(AssignmentActivity.this);

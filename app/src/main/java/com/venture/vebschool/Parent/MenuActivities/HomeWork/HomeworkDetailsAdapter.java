@@ -30,7 +30,7 @@ public class HomeworkDetailsAdapter extends RecyclerView.Adapter<HomeworkDetails
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.homework_details_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_homework4,viewGroup,false);
             holder=new HomeworkDetailsAdapter.HomeWork(view);
         }catch(Exception e)
         {
@@ -65,10 +65,10 @@ public class HomeworkDetailsAdapter extends RecyclerView.Adapter<HomeworkDetails
         LinearLayout l;
         public HomeWork(@NonNull View itemView) {
             super(itemView);
-            tit=itemView.findViewById(R.id.t);
-            des=itemView.findViewById(R.id.d);
-            date=itemView.findViewById(R.id.da);
-            l=itemView.findViewById(R.id.layout);
+            tit=itemView.findViewById(R.id.parent_homework4_title);
+            des=itemView.findViewById(R.id.parent_homework4_desc);
+            date=itemView.findViewById(R.id.parent_homework4_date);
+            l=itemView.findViewById(R.id.parent_homework4_layout);
         }
     }
 }

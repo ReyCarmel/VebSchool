@@ -9,7 +9,6 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.ContactModel;
 
 import java.util.ArrayList;
 
@@ -20,12 +19,12 @@ public class AddContact extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact);
+        setContentView(R.layout.parent_message5);
         getSupportActionBar().setTitle("Contacts");
         try
         {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            recyclerView=findViewById(R.id.recycler_view_contact);
+            recyclerView=findViewById(R.id.parent_message5_recycler);
             arrayList= DBTransactionFunctions.getContact();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(AddContact.this);
             ContactAdapter contactAdapter=new ContactAdapter(getApplicationContext(),arrayList);

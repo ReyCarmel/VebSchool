@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/parent_news4_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/parent_news4_img"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sc" />
+
+
+            <TextView
+                android:id="@+id/parent_news4_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/parent_news4_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parent_news4_title"
+                android:layout_marginLeft="200dp"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/parent_news4_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parent_news4_img"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrE"
+            android:layout_marginTop="2dp"
+            />
+
+
+
+
+
+</LinearLayout>
+
+
+

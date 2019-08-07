@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.ContactModel;
+import com.venture.vebschool.Parent.MenuActivities.Message.ContactModel;
 
 import java.util.ArrayList;
 
@@ -29,7 +29,7 @@ public class SubjectDetailsAdapter extends RecyclerView.Adapter<SubjectDetailsAd
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.sub_details_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_subject4,viewGroup,false);
             holder=new SubjectDetailsAdapter.Subjects(view);
         }catch (Exception e)
         {
@@ -53,8 +53,8 @@ public class SubjectDetailsAdapter extends RecyclerView.Adapter<SubjectDetailsAd
         TextView subject,faculty;
         public Subjects(@NonNull View itemView) {
             super(itemView);
-            subject=itemView.findViewById(R.id.s);
-            faculty=itemView.findViewById(R.id.f);
+            subject=itemView.findViewById(R.id.parent_subject4_sub);
+            faculty=itemView.findViewById(R.id.parent_subject4_name);
         }
     }
 }

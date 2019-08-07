@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.AttendanceModel;
 
 import java.util.ArrayList;
 
@@ -28,7 +27,7 @@ public class NormalAttendanceAdapter extends RecyclerView.Adapter<NormalAttendan
         View view=null;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.attendance_status,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_attendance6,viewGroup,false);
             holder=new NormalAttendanceAdapter.Attendance(view);
         }catch (Exception e)
         {
@@ -53,8 +52,8 @@ public class NormalAttendanceAdapter extends RecyclerView.Adapter<NormalAttendan
         TextView date,status;
         public Attendance(@NonNull View itemView) {
             super(itemView);
-            date=itemView.findViewById(R.id.dt);
-        status=itemView.findViewById(R.id.st);
+            date=itemView.findViewById(R.id.parent_attendance6_date);
+        status=itemView.findViewById(R.id.parent_attendance6_st);
         }
     }
 }

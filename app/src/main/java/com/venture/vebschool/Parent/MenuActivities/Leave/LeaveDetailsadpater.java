@@ -24,7 +24,7 @@ public class LeaveDetailsadpater extends RecyclerView.Adapter<LeaveDetailsadpate
         View view=null;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.leave_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_leave4,viewGroup,false);
             holder=new LeaveDetailsadpater.LeaveDetails(view);
 
         }catch (Exception e)
@@ -53,9 +53,9 @@ public class LeaveDetailsadpater extends RecyclerView.Adapter<LeaveDetailsadpate
 
         public LeaveDetails(@NonNull View itemView) {
             super(itemView);
-            date=itemView.findViewById(R.id.dt);
-            reason=itemView.findViewById(R.id.rs);
-            status=itemView.findViewById(R.id.st);
+            date=itemView.findViewById(R.id.parent_leave4_date);
+            reason=itemView.findViewById(R.id.parent_leave4_rs);
+            status=itemView.findViewById(R.id.parent_leave4_st);
         }
     }
 }

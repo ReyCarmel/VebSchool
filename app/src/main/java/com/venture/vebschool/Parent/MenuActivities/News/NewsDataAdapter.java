@@ -27,7 +27,7 @@ public class NewsDataAdapter extends RecyclerView.Adapter<NewsDataAdapter.AllNew
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.news_details_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_news4,viewGroup,false);
             holder=new NewsDataAdapter.AllNews(view);
 
         }catch(Exception e)
@@ -56,9 +56,9 @@ public class NewsDataAdapter extends RecyclerView.Adapter<NewsDataAdapter.AllNew
         TextView title,s_date,content;
         public AllNews(@NonNull View itemView) {
             super(itemView);
-            title=itemView.findViewById(R.id.t_title);
-            s_date=itemView.findViewById(R.id.t_date);
-            content=itemView.findViewById(R.id.t_content);
+            title=itemView.findViewById(R.id.parent_news4_title);
+            s_date=itemView.findViewById(R.id.parent_news4_date);
+            content=itemView.findViewById(R.id.parent_news4_content);
         }
     }
 }

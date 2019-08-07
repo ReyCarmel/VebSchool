@@ -21,7 +21,7 @@ public class AssignmentDetails extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recycler_assign);
+        setContentView(R.layout.parent_assignment3);
         try
         {
             Intent intent=getIntent();
@@ -29,7 +29,7 @@ public class AssignmentDetails extends AppCompatActivity {
             String name=intent.getStringExtra("name");
             getSupportActionBar().setTitle(name);
 
-         recyclerView=findViewById(R.id.recycler_assign);
+         recyclerView=findViewById(R.id.parent_assign3_layout);
          arrayList= DBTransactionFunctions.getAssignment(id);
 
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(AssignmentDetails.this);

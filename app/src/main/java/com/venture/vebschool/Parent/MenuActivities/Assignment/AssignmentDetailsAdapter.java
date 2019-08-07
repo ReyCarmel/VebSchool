@@ -30,7 +30,7 @@ public class AssignmentDetailsAdapter extends RecyclerView.Adapter<AssignmentDet
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.assignment_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_assignment4,viewGroup,false);
             holder=new AssignmentDetailsAdapter.Assignment(view);
 
         }catch (Exception e)
@@ -67,10 +67,10 @@ public class AssignmentDetailsAdapter extends RecyclerView.Adapter<AssignmentDet
         LinearLayout l;
         public Assignment(@NonNull View itemView) {
             super(itemView);
-            subject=itemView.findViewById(R.id.sub);
-            title=itemView.findViewById(R.id.title);
-            date=itemView.findViewById(R.id.date);
-            l=itemView.findViewById(R.id.layout);
+            subject=itemView.findViewById(R.id.parent_assign4_sub);
+            title=itemView.findViewById(R.id.parent_assign4_title);
+            date=itemView.findViewById(R.id.parent_assign4_date);
+            l=itemView.findViewById(R.id.parent_assign4_layout);
         }
     }
 }

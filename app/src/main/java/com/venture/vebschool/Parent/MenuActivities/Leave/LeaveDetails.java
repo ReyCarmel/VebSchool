@@ -24,7 +24,7 @@ public class LeaveDetails extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.leave_details);
+        setContentView(R.layout.parent_leave3);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
@@ -32,7 +32,7 @@ public class LeaveDetails extends AppCompatActivity {
         getSupportActionBar().setTitle(name);
         try
         {
-            recyclerView=findViewById(R.id.recycler_leave);
+            recyclerView=findViewById(R.id.parent_leave3_recycler);
             arrayList= DBTransactionFunctions.getLeave();
             LinearLayoutManager linearLayoutManager= new LinearLayoutManager(LeaveDetails.this);
             LeaveDetailsadpater leaveDetailsadpater =new LeaveDetailsadpater(getApplicationContext(),arrayList);

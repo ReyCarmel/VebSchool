@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.MarkModel;
 
 import java.util.ArrayList;
 
@@ -32,7 +31,7 @@ public class StudentMarkDetailsAdapter extends RecyclerView.Adapter<StudentMarkD
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.student_marksheet_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_mark4,viewGroup,false);
             holder=new StudentMarkDetailsAdapter.Studmark(view);
 
         }catch (Exception e)
@@ -58,8 +57,8 @@ public class StudentMarkDetailsAdapter extends RecyclerView.Adapter<StudentMarkD
         TextView s,m;
         public Studmark(@NonNull View itemView) {
             super(itemView);
-            s=itemView.findViewById(R.id.subject);
-            m=itemView.findViewById(R.id.mark);
+            s=itemView.findViewById(R.id.parent_mark4_sub);
+            m=itemView.findViewById(R.id.parent_mark4_mark);
         }
     }
 }

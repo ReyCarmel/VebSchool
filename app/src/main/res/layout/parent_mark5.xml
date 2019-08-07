@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#579FDA">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:text="Student Name"
+            android:fontFamily="@font/times_newroman"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/parent_mark5_stud"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".12"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="From "
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/parent_mark5_from"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".12"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="To"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="--select--"
+            android:id="@+id/parent_mark5_to"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text="@string/m1"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times_newroman"
+            android:text=":"
+            android:id="@+id/parent_mark5_spinner"
+            android:textColor="#000"
+            android:paddingBottom="5dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Mark"
+            android:textSize="20dp"
+            android:fontFamily="@font/times_newroman"
+            android:background="@drawable/advance_search_btn"
+            android:id="@+id/parent_mark5_submit"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

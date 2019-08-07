@@ -22,8 +22,8 @@ import android.widget.Toast;
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
 
-import com.venture.vebschool.Parent.model.ExamModel;
-import com.venture.vebschool.Parent.model.MarkModel;
+import com.venture.vebschool.Parent.MenuActivities.Exam.ExamModel;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -57,7 +57,7 @@ public class StudentMarkDetails extends AppCompatActivity  {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student_marksheet);
+        setContentView(R.layout.parent_mark3);
 
         final Intent intent = getIntent();
         id = intent.getStringExtra("id");
@@ -68,9 +68,9 @@ public class StudentMarkDetails extends AppCompatActivity  {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
             arrayList = DBTransactionFunctions.getMarkSheet();
-            recyclerView = findViewById(R.id.recylerview_mark);
-            search = findViewById(R.id.mark_advance1);
-            compare = findViewById(R.id.mark_comapare);
+            recyclerView = findViewById(R.id.parent_mark3_recycler);
+            search = findViewById(R.id.parent_mark3_exam);
+            compare = findViewById(R.id.parent_mark3_compare);
 
 
 
@@ -84,12 +84,12 @@ public class StudentMarkDetails extends AppCompatActivity  {
                 public void onClick(View v) {
                     try {
                         final Dialog dialog = new Dialog(StudentMarkDetails.this);
-                        dialog.setContentView(R.layout.dialog_mark_details);
-                        e_from = dialog.findViewById(R.id.dialog_from);
-                        e_to = dialog.findViewById(R.id.dialog_to);
-                        s_name = dialog.findViewById(R.id.dialog_student);
-                        spinner_mark = dialog.findViewById(R.id.dialog_spinner);
-                        view_mark = dialog.findViewById(R.id.dialog_submit);
+                        dialog.setContentView(R.layout.parent_mark5);
+                        e_from = dialog.findViewById(R.id.parent_mark5_from);
+                        e_to = dialog.findViewById(R.id.parent_mark5_to);
+                        s_name = dialog.findViewById(R.id.parent_mark5_stud);
+                        spinner_mark = dialog.findViewById(R.id.parent_mark5_spinner);
+                        view_mark = dialog.findViewById(R.id.parent_mark5_submit);
                         s_name.setText(name);
                         examModelArrayList = DBTransactionFunctions.getExamName();
 
@@ -151,13 +151,13 @@ public class StudentMarkDetails extends AppCompatActivity  {
                     try
                     {
                         final Dialog dialog=new Dialog(StudentMarkDetails.this);
-                        dialog.setContentView(R.layout.markdetails_adapter1);
-                        studName=dialog.findViewById(R.id.stud_name);
-                        fromDate=dialog.findViewById(R.id.from_date);
-                        toDate=dialog.findViewById(R.id.to_date);
-                        ExamList=dialog.findViewById(R.id.exam_list);
-                        subSpinner=dialog.findViewById(R.id.sub_spinner);
-                        ButtonCompare=dialog.findViewById(R.id.btnCompare);
+                        dialog.setContentView(R.layout.parent_mark8);
+                        studName=dialog.findViewById(R.id.parent_mark8_stud);
+                        fromDate=dialog.findViewById(R.id.parent_mark8_from);
+                        toDate=dialog.findViewById(R.id.parent_mark8_to);
+                        ExamList=dialog.findViewById(R.id.parent_mark8_exam);
+                        subSpinner=dialog.findViewById(R.id.parent_mark8_spinner);
+                        ButtonCompare=dialog.findViewById(R.id.parent_mark8_submit);
                         studName.setText(name);
                         arrayExam=DBTransactionFunctions.getExam();
                         subjectList=DBTransactionFunctions.getSubjectsMark();
@@ -181,11 +181,11 @@ public class StudentMarkDetails extends AppCompatActivity  {
                             @Override
                             public void onClick(View v) {
                                 final Dialog dialog=new Dialog(StudentMarkDetails.this);
-                                dialog.setContentView(R.layout.select_exam_mark_adapter);
+                                dialog.setContentView(R.layout.parent_mark9);
                                 examList=DBTransactionFunctions.getExam();
                                 getSupportActionBar().setTitle("Select Exam");
-                                buttonExam=dialog.findViewById(R.id.done);
-                                examRecycler=dialog.findViewById(R.id.exam_recycler);
+                                buttonExam=dialog.findViewById(R.id.parent_mark9_done);
+                                examRecycler=dialog.findViewById(R.id.parent_mark9_recycler);
                                 LinearLayoutManager linearLayoutManager1=new LinearLayoutManager(StudentMarkDetails.this);
                                 ExamListAdapter examListAdapter=new ExamListAdapter(getApplicationContext(),examList);
                                 examRecycler.setLayoutManager(linearLayoutManager1);

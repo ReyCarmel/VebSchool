@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 public class EventActivity extends AppCompatActivity {
@@ -17,11 +17,11 @@ public class EventActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exam);
+        setContentView(R.layout.parent_event1);
         try
         {
             getSupportActionBar().setTitle("Events");
-            recyclerView=findViewById(R.id.recycler_view_exam);
+            recyclerView=findViewById(R.id.parent_event1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(EventActivity.this);
             EventAdapter eventAdapter=new EventAdapter(getApplication(),arrayList);

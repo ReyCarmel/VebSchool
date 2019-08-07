@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -19,10 +19,10 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
+        setContentView(R.layout.parent_message1);
         try{
             getSupportActionBar().setTitle("Messages");
-            recyclerView=findViewById(R.id.recycler_messageview);
+            recyclerView=findViewById(R.id.parent_message1_recycler);
             arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(MessageActivity.this);
             MessageAdapter messageAdapter=new MessageAdapter(getApplicationContext(),arrayList);

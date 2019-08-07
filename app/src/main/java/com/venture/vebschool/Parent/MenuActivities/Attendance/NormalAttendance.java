@@ -10,7 +10,6 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.AttendanceModel;
 
 
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ public class NormalAttendance extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recycler_attendance);
+        setContentView(R.layout.parent_attendance5);
         try
         {
             Intent intent=getIntent();
@@ -31,7 +30,7 @@ public class NormalAttendance extends AppCompatActivity {
             name=intent.getStringExtra("name");
             getSupportActionBar().setTitle(name);
 
-            recyclerView=findViewById(R.id.recycler_attendance);
+            recyclerView=findViewById(R.id.parent_attendance5_recycler);
             arrayList= DBTransactionFunctions.getAttendance();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(NormalAttendance.this);
             NormalAttendanceAdapter attendanceDateAdapter=new NormalAttendanceAdapter(getApplicationContext(),arrayList);

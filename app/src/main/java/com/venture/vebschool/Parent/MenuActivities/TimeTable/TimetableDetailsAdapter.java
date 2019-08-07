@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.venture.vebschool.Parent.model.TimetableModel;
 import com.venture.vebschool.R;
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class TimetableDetailsAdapter extends RecyclerView.Adapter<TimetableDetai
         View view;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.student_timetable_view,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_timetable4,viewGroup,false);
             holder=new TimetableDetailsAdapter.TImeTable(view);
 
         }catch (Exception e)

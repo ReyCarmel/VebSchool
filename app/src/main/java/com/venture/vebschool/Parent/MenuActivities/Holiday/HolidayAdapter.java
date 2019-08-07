@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class HolidayAdapter extends RecyclerView.Adapter<HolidayAdapter.HoliDay>
         View view=null;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.holiday_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_holiday2,viewGroup,false);
             holder=new HolidayAdapter.HoliDay(view);
 
         }catch (Exception e)
@@ -77,10 +77,10 @@ public class HolidayAdapter extends RecyclerView.Adapter<HolidayAdapter.HoliDay>
         LinearLayout l;
         public HoliDay(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.tname);
-            email=itemView.findViewById(R.id.temail);
-            sclass=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            name=itemView.findViewById(R.id.parent_holiday2_name);
+            email=itemView.findViewById(R.id.parent_holiday2_mail);
+            sclass=itemView.findViewById(R.id.parent_holiday2_class);
+            l=itemView.findViewById(R.id.parent_holiday2_layout);
         }
     }
 }

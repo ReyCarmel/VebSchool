@@ -27,7 +27,7 @@ public class HolidayListAdapter extends RecyclerView.Adapter<HolidayListAdapter.
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.holiday_list_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_holiday4,viewGroup,false);
             holder=new HolidayListAdapter.Holiday(view);
         }catch (Exception e)
         {
@@ -52,8 +52,8 @@ public class HolidayListAdapter extends RecyclerView.Adapter<HolidayListAdapter.
         TextView day,date;
         public Holiday(@NonNull View itemView) {
             super(itemView);
-            day=itemView.findViewById(R.id.holid);
-            date=itemView.findViewById(R.id.dt);
+            day=itemView.findViewById(R.id.parent_holiday4_holi);
+            date=itemView.findViewById(R.id.parent_holiday4_date);
         }
     }
 }

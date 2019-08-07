@@ -11,7 +11,6 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.TimetableModel;
 
 import java.util.ArrayList;
 
@@ -23,7 +22,7 @@ public class TimeTableDetails  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.timetable_details);
+        setContentView(R.layout.parent_timetable3);
 
         Intent intent=getIntent();
         id= intent.getStringExtra("id");
@@ -31,7 +30,7 @@ public class TimeTableDetails  extends AppCompatActivity {
         getSupportActionBar().setTitle(name);
         try{
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            recyclerView=findViewById(R.id.recycler_timeview);
+            recyclerView=findViewById(R.id.parent_timetable3_recycler);
             arrayList= DBTransactionFunctions.getTimetabele();
             TimetableDetailsAdapter timetableDetailsAdapter=new TimetableDetailsAdapter(getApplicationContext(),arrayList);
             recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true));

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,7 @@ public class LeaveAdapter extends RecyclerView.Adapter<LeaveAdapter.Leave> {
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.leave_list_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_leave2,viewGroup,false);
             holder=new LeaveAdapter.Leave(view);
 
         }catch (Exception e)
@@ -78,10 +78,10 @@ public class LeaveAdapter extends RecyclerView.Adapter<LeaveAdapter.Leave> {
         LinearLayout l;
         public Leave(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.tname);
-            mail=itemView.findViewById(R.id.tmail);
-            lclass=itemView.findViewById(R.id.cls);
-            l=itemView.findViewById(R.id.layout);
+            name=itemView.findViewById(R.id.parent_leave2_name);
+            mail=itemView.findViewById(R.id.parent_leave2_mail);
+            lclass=itemView.findViewById(R.id.parent_leave2_class);
+            l=itemView.findViewById(R.id.parent_leave2_layout);
         }
     }
 }

@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class TimetableAdapter extends RecyclerView.Adapter<TimetableAdapter.Time
         View view=null;
         RecyclerView.ViewHolder holder=null;
         try{
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.timetable_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_timetable2,viewGroup,false);
             holder=new TimetableAdapter.TimeTable(view);
 
         }catch (Exception e)
@@ -77,10 +77,10 @@ public class TimetableAdapter extends RecyclerView.Adapter<TimetableAdapter.Time
         LinearLayout l;
         public TimeTable(@NonNull View itemView) {
             super(itemView);
-            t_name=itemView.findViewById(R.id.tname);
-            t_email=itemView.findViewById(R.id.temail);
-            t_class=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            t_name=itemView.findViewById(R.id.parent_timetable2_name);
+            t_email=itemView.findViewById(R.id.parent_timetable2_email);
+            t_class=itemView.findViewById(R.id.parent_timetable2_class);
+            l=itemView.findViewById(R.id.parent_timetable2_layout);
         }
     }
 }

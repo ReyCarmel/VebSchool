@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -33,7 +33,7 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
         RecyclerView.ViewHolder holder=null;
         try
         {
-         view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.homeworklist,viewGroup,false);
+         view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_subject2,viewGroup,false);
          holder=new SubjectAdapter.Subjects(view);
         }catch (Exception e)
         {
@@ -78,10 +78,10 @@ ArrayList<StudentModel> arrayList=new ArrayList<>();
         LinearLayout l;
         public Subjects(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.tname);
-            email=itemView.findViewById(R.id.temail);
-            eclass=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            name=itemView.findViewById(R.id.parent_subject2_name);
+            email=itemView.findViewById(R.id.parent_subject2_mail);
+            eclass=itemView.findViewById(R.id.parent_subject2_class);
+            l=itemView.findViewById(R.id.parent_subject2_layout);
 
         }
     }

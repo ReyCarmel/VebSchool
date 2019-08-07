@@ -18,7 +18,7 @@ public class AssignmentData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.assignment_details);
+        setContentView(R.layout.parent_assignment5);
         try {
             Intent intent=getIntent();
             String id=intent.getStringExtra("id");
@@ -27,9 +27,9 @@ public class AssignmentData extends AppCompatActivity {
 
             arrayList = new ArrayList<AssignmentModel>();
 
-            title=findViewById(R.id.title);
-            desc=findViewById(R.id.des);
-            refr=findViewById(R.id.ref);
+            title=findViewById(R.id.parent_assign5_title);
+            desc=findViewById(R.id.parent_assign5_desc);
+            refr=findViewById(R.id.parent_assign5_ref);
 
             arrayList = DBTransactionFunctions.getAssignmentData(id);
             title.setText(arrayList.get(0).getTit());

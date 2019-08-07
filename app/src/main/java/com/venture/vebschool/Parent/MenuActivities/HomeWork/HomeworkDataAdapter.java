@@ -27,7 +27,7 @@ public class HomeworkDataAdapter extends RecyclerView.Adapter<HomeworkDataAdapte
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.homework_data_adapter,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_homework6,viewGroup,false);
             holder=new HomeworkDataAdapter.Data(view);
         }catch (Exception e)
         {
@@ -54,10 +54,10 @@ public class HomeworkDataAdapter extends RecyclerView.Adapter<HomeworkDataAdapte
         TextView title,desc,ref,attach;
         public Data(@NonNull View itemView) {
             super(itemView);
-            title=itemView.findViewById(R.id.t);
-            desc=itemView.findViewById(R.id.des);
-            ref=itemView.findViewById(R.id.re);
-            attach=itemView.findViewById(R.id.at);
+            title=itemView.findViewById(R.id.parent_homework6_title);
+            desc=itemView.findViewById(R.id.parent_homework6_desc);
+            ref=itemView.findViewById(R.id.parent_homework6_ref);
+            attach=itemView.findViewById(R.id.parent_homework6_attach);
         }
     }
 }

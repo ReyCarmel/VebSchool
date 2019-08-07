@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -24,10 +24,10 @@ public class AttendanceActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
-            setContentView(R.layout.activity_attendance);
-            recyclerView = findViewById(R.id.recycler_view_attendance);
+            setContentView(R.layout.parent_attendance1);
+            recyclerView = findViewById(R.id.parent_attendance1_recycler);
             arrayList=new ArrayList<StudentModel>();
-            t_date=findViewById(R.id.date);
+            t_date=findViewById(R.id.parent_attendance1_date);
 
             getSupportActionBar().setTitle("Attendance");
             arrayList=DBTransactionFunctions.getAttendanceDetails();

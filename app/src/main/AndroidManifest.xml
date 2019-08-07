@@ -46,8 +46,8 @@
         <activity android:name=".Parent.MenuActivities.Assignment.AssignmentActivity" />
         <activity android:name=".Parent.MenuActivities.Assignment.AssignmentDetails" />
         <activity android:name=".Parent.MenuActivities.Assignment.AssignmentData" />
-        <activity android:name=".Parent.MenuActivities.Attendance.Complaint.ComplaintActivity" />
-        <activity android:name=".Parent.MenuActivities.Attendance.Complaint.ComplaintDetails" />
+        <activity android:name=".Parent.MenuActivities.Complaint.ComplaintActivity" />
+        <activity android:name=".Parent.MenuActivities.Complaint.ComplaintDetails" />
         <activity android:name=".Parent.MenuActivities.Attendance.AttendanceGraph" />
         <activity android:name=".Parent.MenuActivities.Attendance.NormalAttendance" />
         <activity android:name=".Parent.MenuActivities.Mark.ViewMark" />

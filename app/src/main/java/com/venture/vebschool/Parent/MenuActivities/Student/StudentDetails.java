@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
 
 import java.util.ArrayList;
 
@@ -23,7 +22,7 @@ public class StudentDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student_details);
+        setContentView(R.layout.parent_student3);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
@@ -34,15 +33,15 @@ public class StudentDetails extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             arrayList = new ArrayList<StudentModel>();
 
-            t_admission=findViewById(R.id.admission);
-            t_name=findViewById(R.id.name);
-            t_class=findViewById(R.id.s_class);
-            t_division=findViewById(R.id.t_division);
-            t_roll=findViewById(R.id.rollNo);
-            t_email=findViewById(R.id.email);
-            t_gender=findViewById(R.id.gender);
-            t_birthday=findViewById(R.id.birh);
-            t_phone=findViewById(R.id.phone);
+            t_admission=findViewById(R.id.parent_student3_ad);
+            t_name=findViewById(R.id.parent_student3_name);
+            t_class=findViewById(R.id.parent_student3_class);
+            t_division=findViewById(R.id.parent_student3_div);
+            t_roll=findViewById(R.id.parent_student3_no);
+            t_email=findViewById(R.id.parent_student3_mail);
+            t_gender=findViewById(R.id.parent_student3_gender);
+            t_birthday=findViewById(R.id.parent_student3_bd);
+            t_phone=findViewById(R.id.parent_student3_ph);
 
             arrayList = DBTransactionFunctions.getSingleStudentDetails(id);
             t_admission.setText(arrayList.get(0).getAdmission_no());

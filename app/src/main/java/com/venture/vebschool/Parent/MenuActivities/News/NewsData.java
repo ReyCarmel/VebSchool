@@ -19,11 +19,11 @@ public class NewsData extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.news_data);
+        setContentView(R.layout.parent_news3);
         getSupportActionBar().setTitle("Current News");
         try
         {
-            recyclerView=findViewById(R.id.recycler_view);
+            recyclerView=findViewById(R.id.parent_news3_recycler);
             arrayList= DBTransactionFunctions.getNews();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(NewsData.this);
             NewsDataAdapter  newsDataAdapter=new NewsDataAdapter(getApplicationContext(),arrayList);

@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.venture.vebschool.R;
 import com.venture.vebschool.databases.DBTransactionFunctions;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -20,12 +20,12 @@ public class LeaveActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.leave);
+        setContentView(R.layout.parent_leave1);
         try
         {
             getSupportActionBar().setTitle("Leave");
-         recyclerView=findViewById(R.id.recycler_leave);
-         arrayList= DBTransactionFunctions.getStudentDetails();
+            recyclerView=findViewById(R.id.parent_leave1_recycler);
+            arrayList= DBTransactionFunctions.getStudentDetails();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(LeaveActivity.this);
             LeaveAdapter leaveAdapter=new LeaveAdapter(getApplicationContext(),arrayList);
             recyclerView.setLayoutManager(linearLayoutManager);

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.venture.vebschool.R;
-import com.venture.vebschool.Parent.model.StudentModel;
+import com.venture.vebschool.Parent.MenuActivities.Student.StudentModel;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class AssignmentAdapter extends RecyclerView.Adapter<AssignmentAdapter.As
         RecyclerView.ViewHolder holder=null;
         try
         {
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.student_assignment,viewGroup,false);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.parent_assignment2,viewGroup,false);
             holder=new AssignmentAdapter.Assign(view);
 
         }catch (Exception e)
@@ -79,10 +79,10 @@ public class AssignmentAdapter extends RecyclerView.Adapter<AssignmentAdapter.As
         LinearLayout l;
         public Assign(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.tname);
-            a_class=itemView.findViewById(R.id.temail);
-            email=itemView.findViewById(R.id.tc);
-            l=itemView.findViewById(R.id.layout);
+            name=itemView.findViewById(R.id.parent_assign2_name);
+            a_class=itemView.findViewById(R.id.parent_assign2_class);
+            email=itemView.findViewById(R.id.parent_assign2_mail);
+            l=itemView.findViewById(R.id.parent_assign2_layout);
         }
     }
 }

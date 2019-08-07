@@ -21,7 +21,7 @@ public class HomeWorkDetails extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_work_details);
+        setContentView(R.layout.parent_homework3);
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");
@@ -30,7 +30,7 @@ public class HomeWorkDetails extends AppCompatActivity {
 
         try
         {
-            recyclerView=findViewById(R.id.recycler_home);
+            recyclerView=findViewById(R.id.parent_homework3_recycler);
             arrayList= DBTransactionFunctions.getHomework();
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HomeWorkDetails.this);
             HomeworkDetailsAdapter homeworkDetailsAdapter=new HomeworkDetailsAdapter(getApplicationContext(),arrayList);
